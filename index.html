@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Login</title>
+        <script src="validation.js"></script>     
+    </head>
+    <body style = "text-align: center" onload="generate_captcha()" >
+        <fieldset>
+        <legend>LOGIN FORM</legend>
+        <form name ="Login">
+            Name:
+                <input placeholder="Enter your username" name ="name" type="text">
+                <br><br>
+            Password: 
+                <input placeholder="Enter your password" name= "pass" type = "password">
+            <br><br>
+            <div id="captcha"> </div>   
+            <input placeholder="Enter capthca" name= "captcha" type = "text">
+            <br><br>
+            <button type="button" onclick="mysubmit()">Submit</button>
+        </form>
+        <p id= "first"></p>
+    </fieldset>
+    <p id = "demo"></p>
+    </body>
+</html>
